@@ -1,0 +1,42 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'product/style.css' %}" />
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+{{ user }}
+
+
+{% if product_list %}
+
+    <ul class="ullist">
+       {% for product in product_list %}
+           <li><b>{{ product.product_name }}</b> {{product.product_price}} €<br> 
+           {{ product.product_des }}</li>
+       {% endfor %} 
+    </ul>
+
+{% endif %}
+
+
+<h1 class="h1">Re-upload input data:</h1>
+<form action="{% url 'product:uploaddata' %}" method="post" enctype="multipart/form-data" class="h1">
+    {% csrf_token %}
+    {{ uploadform.as_p }}
+    <input type="submit" class="input" value="Upload data file"/>
+</form>
+
+<script>
+$('.ullist li').mouseenter(function () {
+    $(this).animate({
+        opacity: 0.6,
+        "margin-top": "20px"
+    }, 300);
+});
+
+$('.ullist li').mouseleave(function () {
+    $(this).animate({
+        opacity: 1,
+        "margin-top": "10px"
+    }, 300);
+});
+</script>

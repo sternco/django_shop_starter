@@ -1,0 +1,40 @@
+.formcss {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: #fff; 
+    height: 1000px;
+    position: absolute; 
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+.formcss h1 {
+    color:rgb(109,13,123);
+    padding-top: 100px;
+}
+.formcss input[type="text"]:focus {background: rgb(253,248,254);border-color:rgb(109,13,123);}
+.formcss input {background:rgb(253,248,254); border-radius: 2px; padding: 5px; 
+                            border: 2px; border-color: background:rgb(253,248,254);;}
+.formcss input[type="submit"] {border-radius: 25px; padding: 5 15 5 15; border:none; 
+                                background: rgb(253,248,254); color: black; cursor: pointer;}
+
+.input {
+    position: relative;
+    padding:5px 15px; 
+    background:rgb(253,248,254); 
+    border:0 none;
+    cursor:pointer;
+    border-radius: 5px; }
+    
+.spanalert {color: #f00; display:none;}
+
+.ullist li {
+    color: white;
+    display: inline;
+    float: left;
+    width: 20%;
+    background: rgb(109,13,123);
+    padding: 30px;
+    margin: 10px;
+}
+.h1 {float: left; width:100%;}
