@@ -1,5 +1,5 @@
 # django_shop_starter
-Django setup with basic funcionalities that make up an online shop.
+Django setup with basic funcionalities that will eventually make up for an e-commerce app.
 
 Initially, I have added basic functionalities that however easy might seem, constitute the basics of such complex solutions
 as an online shop.
